@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Syne+Mono&display=swap');
+
+:root {
+    --primary-color: #FFE537;
+    --secondary-color: #8892B0;
+    --bg-color: #1E1E1E;
+    --card-bg-color: #333333;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Syne Mono', monospace;
+    --hover-shadow: 0px 8px 20px rgba(255, 229, 55, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+.about-container {
+    padding: 24px;
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+
+.about-heading {
+    font-size: 48px;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 24px;
+}
+
+.heading-decor {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.spacer {
+    height: 40px;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: calc(33.33% - 16px);
+    /* 33.33% to fit three cards in one row */
+    padding: 24px;
+    background: var(--card-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.special-card {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-10px);
+    /* Moves the card up by 10px */
+}
+
+.card-container:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.card-description {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-link {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-link:hover {
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,127 @@
+/* Hero.css */
+:root{   
+    --color1: #FFE537;
+    --bg-color: #1E1E1E;  
+}
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #1E1E1E;
+    padding: 0 50px;
+    /* Add padding to left and right for negative space */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.text-container {
+    flex: 1;
+    padding: 50px 20px;
+    padding-left: 200px;
+    /* Add some padding inside the text container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFE537;
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 500;
+}
+
+.name {
+    color: #B1CBDC;
+    font-size: 56px;
+    font-family: 'Syne Mono', sans-serif;
+    font-weight: 400;
+}
+
+.subtitle {
+    color: white;
+    font-size: 58px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.description {
+    color: #B1CBDC;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    color: #FFE537;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #FFE537;
+    padding: 10px 20px;
+    outline: none;
+}
+.button:hover{
+    background-color: var(--color1);
+    color: var(--bg-color);
+}
+.image-container {
+    flex: 1;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 20px;
+    padding-right: 200px;
+    /* Add some padding inside the image container */
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 0 20px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .text-container,
+    .image-container {
+        width: 100%;
+        padding: 20px 0;
+        /* Adjust padding inside the containers on smaller screens */
+    }
+
+    .subtitle {
+        font-size: 48px;
+    }
+
+    .name {
+        font-size: 48px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .image-container {
+        padding: 20px 0;
+    }
+}

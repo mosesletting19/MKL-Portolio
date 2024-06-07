@@ -1,0 +1,40 @@
+.tech-stack-container {
+    padding: 24px;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.tech-stack-heading {
+    font-size: 36px;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.tech-stack-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.tech-name {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    margin-top: 8px;
+}

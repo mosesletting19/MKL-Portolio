@@ -1,0 +1,45 @@
+:root {
+  --ff: "Montserrat", sans-serif;
+  --colorp: #f9f9f9;
+  --colorp2: #fff;
+  --colora: #ffe537;
+  --colorbody: #1e1e1e;
+  --colors: #333;
+  --h1: bold 54px/60px var(--ff);
+  --h2: bold 36px/48px var(--ff);
+  --h3: bold 24px/36px var(--ff);
+}
+/* General body styles */
+body {
+  font-family: var(--ff);
+  background-color: var(--colorbody);
+  color: var(--colors);
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading styles */
+h1 {
+  font: var(--h1);
+  color: var(--colorp2);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--colora);
+}
+
+h3 {
+  font: var(--h3);
+  color: var(--colorp);
+}
+
+/* Example of using color variables for other elements */
+.header {
+  background-color: var(--colorp);
+}
+
+.footer {
+  background-color: var(--colorp2);
+  color: var(--colorbody);
+} 
